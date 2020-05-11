@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+	long long int n,i,k=0;
+	cin>>n;
+	string s[n],r[n];
+	int p[n];
+	for(int i=0;i<n;i++) cin >>p[i];
+	for(int i=0;i<n;i++){
+		cin >>s[i];
+		r[i]=s[i];
+		reverse(r[i].begin(),r[i].end());
+				
+	}
+	for(int i=1;i<n;i++){
+		if(s[i-1]>s[i]&&s[i-1]>r[i]){
+			k=-1;
+			break;
+		}
+		if(s[i-1]>s[i]&&s[i-1]<=r[i]){
+			k+=p[i-1];
+	}}
+	cout<<k<<endl;
+}
