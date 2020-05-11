@@ -1,2 +1,3 @@
 # competitive_programming
-all the CP answers
+all the CP solutions 
+submitted by me
