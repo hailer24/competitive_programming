@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+
+main(){
+    char string[2000];
+    gets(string);
+    //*strrchr(string,' ')='\n';
+    //printf("%d",strlen(string));
+    for(int a=0;a<strlen(string);a++){
+        if(string[a]==' ')string[a]='\n';
+    }
+    printf("%s",string);
+}
