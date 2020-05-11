@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    int p;
+    int n;
+    scanf("%d", &n);
+    int k=n*2-1;
+    for(int i=0;i<k;i++){
+        for(int j=0;j<k;j++){
+            p = i < j ? i:j;
+            p = p < k-i ? p : k-i-1;
+            p = p < k-j ? p : k-j-1;
+            printf("%d ",n-p);
+        }
+        printf("\n");
+    }
+    return 0;
+}
