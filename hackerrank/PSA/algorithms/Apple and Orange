@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+    int s,t,a,b,m,n,reta=0,reto=0;
+    cin >>s>>t>>a>>b>>m>>n;
+    int dista[m],disto[n];
+    for(int i=0;i<m;i++){
+        cin >> dista[i];
+        dista[i]+=a;
+        if(dista[i]<=t&&dista[i]>=s)reta++;
+        }
+    for(int i=0;i<n;i++){
+        cin >> disto[i];
+        disto[i]+=b;
+        if(disto[i]<=t&&disto[i]>=s)reto++;
+        }
+    cout<<reta<<endl<<reto<<endl;
+
+}
