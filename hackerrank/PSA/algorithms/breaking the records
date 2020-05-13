@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int n,min,max,minc=0,maxc=0;
+    cin>>n;
+    int score[n];
+    cin >>score[0];
+    min = max = score[0]; 
+    for(int i=1;i<n;i++){
+        cin >>score[i];
+        if(score[i]>max){
+            max = score[i];
+            maxc++;
+        }
+        if(score[i]<min){
+            min = score[i];
+            minc++;
+        }
+    }
+    cout << maxc << " "<< minc<<endl;
+    return 0;
+
+
+}
